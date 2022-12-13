@@ -1,0 +1,34 @@
+{
+  "name": "data-father-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "ah_wgs@126.com"
+  ],
+  "scripts": {
+    "dev:website": "dumi setup && dumi dev",
+    "build:website":"dumi build"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "lint-staged": {
+    "*.{md,json}": [
+      "prettier --write --no-error-on-unmatched-pattern"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "conventional-changelog-cli": "^2.2.2",
+    "yorkie": "^2.0.0",
+    "lint-staged": "^12.5.0",
+    "prettier": "^2.7.1",
+    "dumi": "^2.0.2"
+  }
+}
