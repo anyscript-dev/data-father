@@ -2,13 +2,14 @@
   "name": "data-father-monorepo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "authors": [
     "ah_wgs@126.com"
   ],
   "scripts": {
     "dev:website": "dumi setup && dumi dev",
-    "build:website":"dumi build"
+    "build:website": "dumi build",
+    "build:sdks": "father build",
+    "bootstrap": "data-father-scripts bootstrap"
   },
   "keywords": [],
   "license": "MIT",
@@ -25,10 +26,21 @@
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
+    "chalk": "4.1.2",
     "conventional-changelog-cli": "^2.2.2",
-    "yorkie": "^2.0.0",
+    "cross-spawn": "^7.0.3",
+    "data-father-scripts": "workspace:*",
+    "dumi": "^2.0.2",
+    "father": "^4.1.1",
     "lint-staged": "^12.5.0",
     "prettier": "^2.7.1",
-    "dumi": "^2.0.2"
+    "typescript": "^4.8.2",
+    "yorkie": "^2.0.0",
+    "tsx": "^3.12.1"
+  },
+  "packageManager": "pnpm@7.17.0",
+  "engines": {
+    "node": ">=14",
+    "pnpm": ">=7"
   }
 }

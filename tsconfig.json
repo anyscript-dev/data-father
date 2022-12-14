@@ -1,11 +1,11 @@
 {
+  "extends": "./tsconfig.base.json",
   "compilerOptions": {
-    "strict": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "baseUrl": "./",
+    "baseUrl": ".",
     "paths": {
-      "@@/*": [".dumi/tmp/*"]
+      "@/*": [
+        "*"
+      ],
     }
   }
 }
