@@ -1,1 +1,3 @@
-export const foo = 1
+export default () => {
+  return '@anyscript/data-father-web-sdk';
+};

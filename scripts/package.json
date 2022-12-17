@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "bin": {
-    "data-father-scripts": "bin/data-father-scripts.js"
+    "data-father-script": "bin/data-father-scripts.js"
+  },
+  "devDependencies": {
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "chalk": "4.1.2",
+    "fs-extra": "^11.1.0"
   }
 }

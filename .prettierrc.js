@@ -1,14 +1,26 @@
 module.exports = {
-  printWidth: 80,
-  proseWrap: 'never',
+  semi: false,
+  tabWidth: 2,
   singleQuote: true,
+  printWidth: 80,
   trailingComma: 'all',
   overrides: [
     {
-      files: '*.md',
+      files: ['*.json5'],
       options: {
-        proseWrap: 'preserve',
+        singleQuote: false,
+        quoteProps: 'preserve',
+      },
+    },
+    {
+      files: ['*.yml'],
+      options: {
+        singleQuote: false,
       },
     },
   ],
-};
+  plugins: [
+    require.resolve('prettier-plugin-organize-imports'),
+    require.resolve('prettier-plugin-packagejson'),
+  ],
+}

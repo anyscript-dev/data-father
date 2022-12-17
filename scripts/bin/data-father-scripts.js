@@ -14,7 +14,7 @@ assert(
   `Executed script '${chalk.red(name)}' does not exist`,
 );
 
-console.log(chalk.cyan(`[data-father-scripts]:current run ${name}\n`));
+console.log(chalk.cyan(`[data-father-scripts]: current run ${name}\n`));
 
 const scriptPathAsStr = JSON.stringify(scriptsPath);
 const spawn = sync('tsx', [scriptPathAsStr, ...throughArgs], {

@@ -1,7 +1,7 @@
 {
-  "name": "@anyscript/data-father-web-sdk",
+  "name": "@anyscript/data-father-shared",
   "version": "0.0.1",
-  "description": "@anyscript/data-father-web-sdk",
+  "description": "@anyscript/data-father-shared",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -20,7 +20,7 @@
   ],
   "license": "MIT",
   "bugs": "https://github.com/anyscript-dev/data-father/issues",
-  "homepage": "https://github.com/anyscript-dev/data-father/tree/master/packages/web-sdk#readme",
+  "homepage": "https://github.com/anyscript-dev/data-father/tree/master/packages/shared#readme",
   "publishConfig": {
     "access": "public"
   }
