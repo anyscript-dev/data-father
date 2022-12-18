@@ -2,6 +2,13 @@
   "name": "@anyscript/data-father-ui",
   "version": "0.0.1",
   "description": "@anyscript/data-father-ui",
+  "homepage": "https://github.com/anyscript-dev/data-father/tree/master/packages/ui#readme",
+  "bugs": "https://github.com/anyscript-dev/data-father/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anyscript-dev/data-father"
+  },
+  "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -11,17 +18,18 @@
     "build": "data-father-script father build",
     "dev": "data-father-script father dev"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/anyscript-dev/data-father"
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.0.26",
+    "@types/react-dom": "18.0.9"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "authors": [
     "ahwgs <ah_wgs@126.com> (https://github.com/ahwgs)"
-  ],
-  "license": "MIT",
-  "bugs": "https://github.com/anyscript-dev/data-father/issues",
-  "homepage": "https://github.com/anyscript-dev/data-father/tree/master/packages/ui#readme",
-  "publishConfig": {
-    "access": "public"
-  }
+  ]
 }

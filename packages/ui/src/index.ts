@@ -1,3 +1,1 @@
-export default () => {
-  return '@anyscript/data-father-ui';
-};
+export * from './Button'

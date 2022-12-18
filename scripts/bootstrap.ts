@@ -1,6 +1,6 @@
-import path from 'path'
 import chalk from 'chalk'
 import fsExtra from 'fs-extra'
+import path from 'path'
 import { PATHS, SCRIPTS } from './internal/constants'
 import { getProjectName, getVersion } from './internal/utils'
 
@@ -123,7 +123,7 @@ async function bootstrap() {
         await fsExtra.writeFile(
           path.join(targetPkgDir, 'src', 'index.ts'),
           `
-export default () => {
+export default (): string => {
   return '${projectName}';
 };\n`.trimLeft(),
           'utf-8',

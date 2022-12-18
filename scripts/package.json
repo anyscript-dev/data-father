@@ -6,8 +6,10 @@
     "data-father-script": "bin/data-father-scripts.js"
   },
   "devDependencies": {
+    "@types/cross-spawn": "^6.0.2",
     "@types/enzyme-adapter-react-16": "^1.0.6",
     "chalk": "4.1.2",
+    "cross-spawn": "^7.0.3",
     "fs-extra": "^11.1.0"
   }
 }
